@@ -7,6 +7,22 @@ import { SEASON_SCHEDULE,Teams } from "./ScheduleData";
 
 export class SoccerService{
     getScheduleAsync(){
-        return Promise.resolve
+        return Promise.resolve(SEASON_SCHEDULE);
+    }
+
+    getSchedule(){
+        return SEASON_SCHEDULE;
+    }
+
+    getAllTeamAsync(){
+        return Promise.resolve(Teams);
+    }
+
+    getAllTeams(){
+        return Teams;
+    }
+
+    private computeRankings(){
+        
     }
 }

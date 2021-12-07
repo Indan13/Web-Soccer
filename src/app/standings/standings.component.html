@@ -1,4 +1,4 @@
-<h3>{{LeageName}} Standings</h3>
+<h3>{{LeagueName}} Standings</h3>
 <br>
 <table>
     <thead>
@@ -13,8 +13,8 @@
     <tbody>
         <tr *ngFor="let currentRow of Standings">
             <td>{{currentRow.TeamName}}</td>
-            <td>{{currentRow.GamePlayed}}</td>
-            <td>{{currentRow.Wins*3+ currentRow.Ties}}</td>
+            <td>{{currentRow.GamesPlayed}}</td>
+            <td>{{currentRow.wins*3+ currentRow.Ties}}</td>
             <td>{{currentRow.GoalsFor}}</td>
             <td>{{currentRow.GoalsAgaints}}</td>
         </tr>
